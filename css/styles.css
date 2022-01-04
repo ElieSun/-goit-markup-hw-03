@@ -165,6 +165,7 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 /* Заголовок h1 */
 .section-title-1 {
@@ -176,7 +177,6 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-bottom: 30px;
   color: var(--color-letter-white);
   max-width: 696px;
   margin: 0 auto 30px auto;
@@ -187,22 +187,24 @@ a {
   color: var(--section-paragraf-color);
   line-height: calc(24 / 14);
   font-size: 14px;
-  padding-left: 24px;
-  width: 270px;
-  height: 75px;
-  left: 215px;
-  top: 800px;
+}
+.section-paragraf-portfolio {
+  font-weight: normal;
+  color: var(--section-paragraf-color);
+  line-height: calc(24 / 14);
+  font-size: 14px;
+  padding: 4px 24px 20px 24px;
 }
 .section-paragraf-1 {
   font-weight: 400;
   color: var(--section-paragraf-color);
   line-height: calc(30 / 16);
   font-size: 14px;
-  width: 322px;
+  /* width: 322px;
   height: 30px;
   left: 239px;
-  top: 1050px;
-  padding-top: 10px;
+  top: 1050px; */
+  /* padding-top: 10px; */
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -213,9 +215,9 @@ a {
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
-  margin: 30px 59px auto 60px;
   color: var(--section-title-color);
   text-align: center;
+  margin-bottom: 10px;
 }
 /* Секция заголовка "Чем мы занимаемся" */
 .title {
@@ -235,8 +237,8 @@ a {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
-  padding-left: 24px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 
   color: var(--section-title-color);
 }
@@ -261,7 +263,6 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--section-title-color);
-  padding-top: 94px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -387,12 +388,9 @@ a {
   background: var(--color-letter-blue);
   border-radius: 4px;
   border: none;
-  margin-bottom: 200px;
 
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
+  min-width: 200px;
+  min-height: 50px;
 }
 .section-btn-1:hover,
 .section-btn-1:focus {
@@ -467,10 +465,16 @@ a {
   border-radius: 4px;
   border: none;
 }
+/* Вторая секция с текстом */
+.section-2 {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* <!-- Наша команда--> */
 .section-our-team {
   background-color: #f5f4fa;
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 /* Цвет части логотипа в футере */
 .color-logo-studio-address {
@@ -490,14 +494,13 @@ a {
   margin: 0 auto;
   /* outline: 2px solid #bb0505; */
 }
-.action {
-  display: flex;
-  align-items: center;
-  width: 1600px;
-}
 
 /* !!!!ЭТО РОДИТЕЛЬ ГЛАВНОГО МЕНЮ НАВИГАЦИИ ВСЕХ ССЫЛОК И КНОПОК, СВОЙСТВО
   align-items: center; СТАВИТ ИХ В ГОРИЗОНТАЛЬНОЕ ПОЛОЖЕНИЕ ОТНОСИТЕЛЬНО ГЛАВНОЙ ОСИ!!!!! */
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 .main-nav {
   display: flex;
   align-items: center;
@@ -506,7 +509,7 @@ a {
   display: flex;
   flex-wrap: wrap;
 
-  margin-left: 50px;
+  margin-left: 93px;
 }
 .categories-list .item:not(:last-child) {
   margin-right: 0;
@@ -516,6 +519,7 @@ a {
 }
 
 /* Расположение контактов */
+
 .categories-contact {
   display: flex;
   flex-wrap: wrap;
@@ -531,7 +535,7 @@ a {
 }
 
 .img-1 {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 /* Страничка портфолио кнопки */
@@ -573,8 +577,7 @@ a {
 }
 .list {
   margin-right: 30px;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  width: 270px;
 }
 .action-list .list:last-child {
   margin-right: 0px;
@@ -588,11 +591,7 @@ a {
 }
 .list-photo {
   margin-right: 30px;
-
   width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 1061px;
 }
 .child-photo .list-photo:last-child {
   margin-right: 0px;
@@ -618,10 +617,11 @@ a {
   color: var(--section-paragraf-color);
   line-height: calc(24 / 14);
   font-size: 14px;
-  width: 270px;
+  text-align: center;
+  /* width: 270px;
   height: 75px;
   left: 215px;
-  top: 800px;
+  top: 800px; */
 }
 
 .section-paragraf-2 {
@@ -629,11 +629,12 @@ a {
   color: var(--section-paragraf-color);
   line-height: calc(24 / 14);
   font-size: 14px;
-  padding: 10px 61px 30px 62px;
+  text-align: center;
+  /* padding: 10px 61px 30px 62px;
   width: 270px;
   height: 75px;
   left: 215px;
-  top: 800px;
+  top: 800px; */
 }
 
 .section-paragraf-3 {
@@ -641,11 +642,12 @@ a {
   color: var(--section-paragraf-color);
   line-height: calc(24 / 14);
   font-size: 14px;
-  padding: 10px 97px 30px 97px;
+  text-align: center;
+  /* padding: 10px 97px 30px 97px;
   width: 270px;
   height: 75px;
   left: 215px;
-  top: 800px;
+  top: 800px; */
 }
 
 .section-paragraf-4 {
@@ -653,11 +655,12 @@ a {
   color: var(--section-paragraf-color);
   line-height: calc(24 / 14);
   font-size: 14px;
-  padding: 10px 91px 30px 92px;
+  text-align: center;
+  /* padding: 10px 91px 30px 92px;
   width: 270px;
   height: 75px;
   left: 215px;
-  top: 800px;
+  top: 800px; */
 }
 /* .title-our-team-1 {
   font-family: var(--font-family);
@@ -688,4 +691,9 @@ a {
 }
 .images {
   border-bottom: 1px solid #ececec;
+}
+.our-team-text {
+  padding: 30px 59px 30px 62px;
+}
+.section-paragraf-portfolio {
 }

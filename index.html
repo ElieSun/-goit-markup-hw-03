@@ -17,8 +17,8 @@
 <body class="body">
     <!-- Основной блок навигации -->
     <header class="header">
-        <div class="container header-nav">
-
+        <div class="container">
+          <div class="header-nav">
             <nav class="main-nav">
 
                 <a href="./index.html" class="logo"><span class="color-logo-web">Web</span>
@@ -30,14 +30,15 @@
                     </li>
                     <li class="item"><a href="" class="header-link">Контакты</a></li>
                 </ul>
-    
+            </nav>
+            
                 <ul class="categories-contact">
                     <li class="categories-contact-mail"><a href="mailto:info@devstudio.com"
                             class="header-link-mail">info@devstudio.com</a></li>
                     <li class="categories-contact-tel"><a href="tel:+380961111111"
                             class="header-link-tel">+380961111111</a></li>
                 </ul>
-            </nav>
+        </div>
         </div>
     </header>
     <!-- Секция заказать услугу -->
@@ -51,9 +52,8 @@
         </section>
         <!-- Секция чем мы занимаемся -->
        
-            <section>
+            <section class="section-2">
                 <div class="container">
-                <div class="action">
                     <ul class="action-list">
                         <li class="list">
                             <h3 class="title-1">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -77,7 +77,7 @@
                         </li>
                     </ul>
                 </div>
-                </div>
+            
             </section>
         </div>
 
@@ -108,23 +108,31 @@
                      <ul class="team"> 
                         <li class="list-team">
                             <img src="./images/img_(3).jpg" alt="Игорь демьяненко Product Designer" width="270">
-                            <h3 class="title-our-team">Игорь демьяненко</h3>
+                            <div class="our-team-text">
+                            <h3 class="title-our-team">Игорь Демьяненко</h3>
                             <p class="section-paragraf-1">Product Designer</p>
+                            </div>
                         </li>
                         <li class="list-team">
                             <img src="./images/img_(4).jpg" alt="Ольга Репина Frontent Developer" width="270">
+                            <div class="our-team-text">
                             <h3 class="title-our-team">Ольга Репина</h3>
                             <p class="section-paragraf-2">Frontent Developer</p>
+                            </div>
                         </li>
                         <li class="list-team">
                             <img src="./images/img_(5).jpg" alt="Николай Тарасов Marketing" width="270">
+                            <div class="our-team-text">
                             <h3 class="title-our-team">Николай Тарасов</h3>
                             <p class="section-paragraf-3">Marketing</p>
+                            </div>
                         </li>
                         <li class="list-team">
                             <img src="./images/img_(6).jpg" alt="Михаил Ермаков UI Designer" width="270">
+                            <div class="our-team-text">
                             <h3 class="title-our-team">Михаил Ермаков</h3>
                             <p class="section-paragraf-4">UI Designer</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
