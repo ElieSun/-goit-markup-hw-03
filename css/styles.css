@@ -298,7 +298,7 @@ a {
 }
 /* Секция адреса */
 .logo-address {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .about-address {
   font-family: var(--font-family);
@@ -317,7 +317,7 @@ a {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--color-letter-white);
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .address-link-maps {
   font-family: inherit;
@@ -346,7 +346,7 @@ a {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .address-link-mail:hover {
   color: var(--color-letter-blue);
@@ -414,10 +414,8 @@ a {
   border-radius: 4px;
   border: none;
 
-  width: 73px;
-  height: 38px;
-  left: 495px;
-  top: 174px;
+  min-width: 73px;
+  min-height: 38px;
 }
 .btn-blue:hover,
 .btn-blue:focus {
@@ -458,10 +456,8 @@ a {
   letter-spacing: 0.03em;
   color: var(--section-title-color);
   background: #f5f4fa;
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
+  min-width: 128px;
+  min-height: 38px;
   border-radius: 4px;
   border: none;
 }
@@ -540,18 +536,16 @@ a {
 
 /* Страничка портфолио кнопки */
 .main-buttons {
-  margin-bottom: 34px;
+  padding-bottom: 94px;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 34px;
-}
+
 .main-btn {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 94px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .main-btn-item {
   display: inline-block;
@@ -675,9 +669,9 @@ a {
 .list-img {
   display: flex;
   flex-wrap: wrap;
-  width: 1230px;
+  /* width: 1230px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 15px; */
 }
 
 .list-img > .images {
@@ -689,11 +683,18 @@ a {
 .list-img .images:last-child {
   margin-right: 0px;
 }
+.list-img .images:nth-child(-n + 3) {
+  margin-top: 0;
+}
+.list-img .images:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
 .images {
   border-bottom: 1px solid #ececec;
 }
 .our-team-text {
-  padding: 30px 59px 30px 62px;
+  padding: 30px 20px 30px 20px;
 }
 .section-paragraf-portfolio {
 }
