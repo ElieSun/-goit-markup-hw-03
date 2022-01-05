@@ -193,7 +193,6 @@ a {
   color: var(--section-paragraf-color);
   line-height: calc(24 / 14);
   font-size: 14px;
-  padding: 4px 24px 20px 24px;
 }
 .section-paragraf-1 {
   font-weight: 400;
@@ -273,8 +272,8 @@ a {
   font-size: 18px;
   line-height: calc(36 / 18);
   color: var(--section-title-color);
-  padding: 20px 24px 4px 24px;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 /* Подвал */
 .footer {
@@ -693,8 +692,12 @@ a {
 .images {
   border-bottom: 1px solid #ececec;
 }
-.our-team-text {
+/* .our-team-text {
   padding: 30px 20px 30px 20px;
-}
-.section-paragraf-portfolio {
+} */
+.text-img {
+  padding: 20px 24px 20px 24px;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
 }
